@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity-->
+        <scene sceneID="THn-Hq-00U">
+            <objects>
+                <viewController storyboardIdentifier="ActivityListingVC" id="4iB-Mg-7s5" customClass="ActivityListingVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5r-HN-l2M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53P-jU-UVT" customClass="CommonHeader" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jwl-DN-8a1"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MZQ-R7-vaF">
+                                <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Flx-gC-DeM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lay-Ro-JNi">
+                                    <size key="itemSize" width="166" height="62"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeTopMenuCollectionViewCell" id="7vB-bo-Iog" customClass="HomeTopMenuCollectionViewCell" customModule="SwimmingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-6" width="166" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="704-XF-cXZ">
+                                                    <rect key="frame" x="8" y="52" width="150" height="2"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="TzF-dC-mve"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXy-gu-mk7">
+                                                    <rect key="frame" x="8" y="8" width="150" height="39"/>
+                                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qXy-gu-mk7" firstAttribute="top" secondItem="7vB-bo-Iog" secondAttribute="top" constant="8" id="Irb-K6-n4S"/>
+                                            <constraint firstItem="704-XF-cXZ" firstAttribute="trailing" secondItem="qXy-gu-mk7" secondAttribute="trailing" id="QhK-zR-DK9"/>
+                                            <constraint firstItem="qXy-gu-mk7" firstAttribute="leading" secondItem="7vB-bo-Iog" secondAttribute="leading" constant="8" id="UGb-io-g1k"/>
+                                            <constraint firstItem="704-XF-cXZ" firstAttribute="leading" secondItem="qXy-gu-mk7" secondAttribute="leading" id="aSi-jq-Ghr"/>
+                                            <constraint firstAttribute="bottom" secondItem="704-XF-cXZ" secondAttribute="bottom" constant="8" id="oVQ-Dc-R0R"/>
+                                            <constraint firstAttribute="trailing" secondItem="qXy-gu-mk7" secondAttribute="trailing" constant="8" id="pkl-MN-0bD"/>
+                                            <constraint firstItem="704-XF-cXZ" firstAttribute="top" secondItem="qXy-gu-mk7" secondAttribute="bottom" constant="5" id="xvG-ce-2hA"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="menuName" destination="qXy-gu-mk7" id="pSg-Od-h86"/>
+                                            <outlet property="menuView" destination="704-XF-cXZ" id="TmC-Wb-oFl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="4iB-Mg-7s5" id="tP9-Sa-rHr"/>
+                                    <outlet property="delegate" destination="4iB-Mg-7s5" id="iXu-aJ-Fg5"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbs-WN-nwO">
+                                <rect key="frame" x="69" y="168" width="276" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvc-Ij-gCq">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="40"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="15"/>
+                                        <state key="normal" title="Past Activities">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pastActivitiesButtonTapped:" destination="4iB-Mg-7s5" eventType="touchUpInside" id="xfY-Ya-1TV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ET-Eb-PUX">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="40"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                        <state key="normal" title="Next Activiies">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextActivitiesButtonTapped:" destination="4iB-Mg-7s5" eventType="touchUpInside" id="yPx-dp-Lvr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4ET-Eb-PUX" firstAttribute="width" secondItem="vvc-Ij-gCq" secondAttribute="width" id="2eA-H7-33w"/>
+                                    <constraint firstItem="vvc-Ij-gCq" firstAttribute="top" secondItem="gbs-WN-nwO" secondAttribute="top" id="7Tm-Dv-Zdn"/>
+                                    <constraint firstAttribute="bottom" secondItem="vvc-Ij-gCq" secondAttribute="bottom" id="HnQ-GO-t6F"/>
+                                    <constraint firstAttribute="trailing" secondItem="vvc-Ij-gCq" secondAttribute="trailing" id="JDO-7O-0EK"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ET-Eb-PUX" secondAttribute="bottom" id="PKb-iB-Vr4"/>
+                                    <constraint firstItem="4ET-Eb-PUX" firstAttribute="leading" secondItem="gbs-WN-nwO" secondAttribute="leading" id="oqd-ib-ylv"/>
+                                    <constraint firstAttribute="height" constant="40" id="s18-6E-Ut7"/>
+                                    <constraint firstItem="4ET-Eb-PUX" firstAttribute="top" secondItem="gbs-WN-nwO" secondAttribute="top" id="xLT-RC-dQr"/>
+                                    <constraint firstItem="vvc-Ij-gCq" firstAttribute="leading" secondItem="4ET-Eb-PUX" secondAttribute="trailing" id="xZH-YU-8Ty"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-ob-kFw">
+                                <rect key="frame" x="16" y="224" width="382" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4iB-Mg-7s5" id="NGU-16-lp9"/>
+                                    <outlet property="delegate" destination="4iB-Mg-7s5" id="Ea5-cq-nDt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="53P-jU-UVT" firstAttribute="leading" secondItem="sMG-lz-aA3" secondAttribute="leading" id="6ii-KT-lcd"/>
+                            <constraint firstItem="sDR-ob-kFw" firstAttribute="top" secondItem="gbs-WN-nwO" secondAttribute="bottom" constant="16" id="CBZ-UW-QjS"/>
+                            <constraint firstItem="sMG-lz-aA3" firstAttribute="trailing" secondItem="sDR-ob-kFw" secondAttribute="trailing" constant="16" id="KsR-fP-QlH"/>
+                            <constraint firstItem="sMG-lz-aA3" firstAttribute="bottom" secondItem="sDR-ob-kFw" secondAttribute="bottom" constant="16" id="SX1-Dr-fsA"/>
+                            <constraint firstItem="gbs-WN-nwO" firstAttribute="top" secondItem="MZQ-R7-vaF" secondAttribute="bottom" constant="24" id="bVo-Il-Xag"/>
+                            <constraint firstItem="53P-jU-UVT" firstAttribute="trailing" secondItem="sMG-lz-aA3" secondAttribute="trailing" id="cSn-cC-Cp0"/>
+                            <constraint firstItem="MZQ-R7-vaF" firstAttribute="trailing" secondItem="sMG-lz-aA3" secondAttribute="trailing" id="hkI-KT-eN0"/>
+                            <constraint firstItem="MZQ-R7-vaF" firstAttribute="top" secondItem="53P-jU-UVT" secondAttribute="bottom" id="lMn-YF-MFp"/>
+                            <constraint firstItem="gbs-WN-nwO" firstAttribute="centerX" secondItem="MZQ-R7-vaF" secondAttribute="centerX" id="qey-p3-3ej"/>
+                            <constraint firstItem="sDR-ob-kFw" firstAttribute="leading" secondItem="sMG-lz-aA3" secondAttribute="leading" constant="16" id="tW0-Xm-KQ8"/>
+                            <constraint firstItem="MZQ-R7-vaF" firstAttribute="leading" secondItem="sMG-lz-aA3" secondAttribute="leading" id="ua7-bN-0XT"/>
+                            <constraint firstItem="gbs-WN-nwO" firstAttribute="width" secondItem="MZQ-R7-vaF" secondAttribute="width" multiplier="1:1.5" id="vtc-be-2ak"/>
+                            <constraint firstItem="53P-jU-UVT" firstAttribute="top" secondItem="sMG-lz-aA3" secondAttribute="top" id="x1f-b8-BBW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sMG-lz-aA3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Activity" image="activity_inact" selectedImage="activity_inact" id="oDR-wd-iqy"/>
+                    <connections>
+                        <outlet property="ActivitiesView" destination="gbs-WN-nwO" id="gXf-KW-g8g"/>
+                        <outlet property="activityCollectionView" destination="MZQ-R7-vaF" id="omc-Hg-mhN"/>
+                        <outlet property="activityListTableView" destination="sDR-ob-kFw" id="OyS-Wi-UMJ"/>
+                        <outlet property="header" destination="53P-jU-UVT" id="Wed-OR-Gcv"/>
+                        <outlet property="nextActivityButton" destination="4ET-Eb-PUX" id="QBg-nb-xWw"/>
+                        <outlet property="pastActivityButton" destination="vvc-Ij-gCq" id="v4D-pX-u6o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1V-Xs-5uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="193.52678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity_inact" width="25" height="25"/>
+    </resources>
+</document>

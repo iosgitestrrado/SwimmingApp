@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B35CF7A1-D409-4ECF-90A3-10ABB610B400"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A238F89-225E-48F4-B605-9DF8B33E2A49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwimmingApp/Registration/RegisterChildVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "1A238F89-225E-48F4-B605-9DF8B33E2A49 - bac5a6a7bc8c5364"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwimmingApp.RegisterChildVC.serviceCallForAddNewChild() -&gt; ()"
+                  moduleName = "SwimmingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin/Downloads/SwimmingAppTemp/SwimmingApp/Registration/RegisterChildVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "1A238F89-225E-48F4-B605-9DF8B33E2A49 - c111ff06e04e5ecd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; () in SwimmingApp.RegisterChildVC.serviceCallForAddNewChild() -&gt; ()"
+                  moduleName = "SwimmingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin/Downloads/SwimmingAppTemp/SwimmingApp/Registration/RegisterChildVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D156EB0-3D88-435C-9E48-A8FDE36D7584"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwimmingApp/New Group/New Group/WebServiceModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "makePostApiCallWithParameterss(parameter:withUrl:onSuccess:onFailure:duringProgress:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D156EB0-3D88-435C-9E48-A8FDE36D7584 - e14cd86e30c13840"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SwimmingApp.WebServiceModel.makePostApiCallWithParameterss(parameter: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withUrl: Foundation.URL, onSuccess: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; (), onFailure: (__C.NSError) -&gt; (), duringProgress: Swift.Optional&lt;(Swift.Float) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwimmingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin/Downloads/SwimmingAppTemp/SwimmingApp/New%20Group/New%20Group/WebServiceModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1738">
+               </Location>
+               <Location
+                  uuid = "6D156EB0-3D88-435C-9E48-A8FDE36D7584 - a8b2a1f8d7efb6b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static SwimmingApp.WebServiceModel.makePostApiCallWithParameterss(parameter: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withUrl: Foundation.URL, onSuccess: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; (), onFailure: (__C.NSError) -&gt; (), duringProgress: Swift.Optional&lt;(Swift.Float) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwimmingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin/Downloads/SwimmingAppTemp/SwimmingApp/New%20Group/New%20Group/WebServiceModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "274">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "950889CF-0E4A-4BD2-A31E-6E846278A955"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwimmingApp/Registration/RegisterChildVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

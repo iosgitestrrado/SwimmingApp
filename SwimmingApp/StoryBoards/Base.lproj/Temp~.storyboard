@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Q4-3o-ccn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="din-round-regular.ttf">
+            <string>DinRoundRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--TempVC One-->
+        <scene sceneID="90y-nB-YLJ">
+            <objects>
+                <viewController storyboardIdentifier="TempVCOne" id="are-vT-idz" customClass="TempVCOne" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3bV-Ml-YUP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J8p-oQ-JoF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mgJ-i6-QZF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeP-zC-ORE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4346" y="613"/>
+        </scene>
+        <!--LocationSearchVC-->
+        <scene sceneID="33h-vj-S39">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="LocationSearchVC" id="65B-9r-9s9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home_act" id="34P-iu-dpD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVZ-Yf-SGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5232.608695652174" y="913.39285714285711"/>
+        </scene>
+        <!--TabbarVC-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarVC" id="49e-Tb-3d3" customClass="TabbarVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.25098039220000001" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabbar" destination="W28-zg-YXA" id="xQO-Xx-PyK"/>
+                        <segue destination="AsK-A5-yc1" kind="relationship" relationship="viewControllers" id="xhL-sU-qeK"/>
+                        <segue destination="rkX-da-9f4" kind="relationship" relationship="viewControllers" id="Tsb-jL-LCu"/>
+                        <segue destination="65B-9r-9s9" kind="relationship" relationship="viewControllers" id="dgn-4E-pSS"/>
+                        <segue destination="5T0-ad-F23" kind="relationship" relationship="viewControllers" id="5mB-wF-ZvL"/>
+                        <segue destination="8mx-LQ-zZN" kind="relationship" relationship="viewControllers" id="BhH-Xh-yes"/>
+                        <segue destination="bkb-ee-ccC" kind="relationship" relationship="viewControllers" id="Bcq-00-ipv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="700"/>
+        </scene>
+        <!--ActivityListingVC-->
+        <scene sceneID="PhR-ED-r9y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Activity" referencedIdentifier="ActivityListingVC" id="AsK-A5-yc1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Activity" id="c3b-8Q-Xje"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dt-Wa-Z59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="589"/>
+        </scene>
+        <!--NotificationListingVC-->
+        <scene sceneID="yAw-Zj-Nt1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" referencedIdentifier="NotificationListingVC" id="8mx-LQ-zZN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notification" id="Q2V-Qc-zqI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsK-Lo-JEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="813"/>
+        </scene>
+        <!--CourseListVC-->
+        <scene sceneID="2jy-Zu-7xx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" referencedIdentifier="CourseListVC" id="rkX-da-9f4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Explore" selectedImage="explore_act" id="ymI-0m-QZ9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXp-XG-44K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="892"/>
+        </scene>
+        <!--MessageListingVC-->
+        <scene sceneID="wmn-8V-bCW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Message" referencedIdentifier="MessageListingVC" id="5T0-ad-F23" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Message" id="lcl-mn-yqI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NME-Rt-Jal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="939"/>
+        </scene>
+        <!--Registration NameVC-->
+        <scene sceneID="UPy-4N-rrB">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationNameVC" id="4Q4-3o-ccn" customClass="RegistrationNameVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59R-YP-gEa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="CKn-ea-zUE" customClass="BorderProgressBar" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="78" y="113" width="320" height="20"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="YTq-b5-1pQ"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsY-6o-0pU">
+                                <rect key="frame" x="16" y="170" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJl-uB-X0F" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="225.5" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="prf-Q3-xkc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-Fp-dvG" customClass="ShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="281.5" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="47f-LK-L8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="4Q4-3o-ccn" eventType="touchUpInside" id="uVH-AU-L3z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="f8H-g5-t6m">
+                                <rect key="frame" x="32" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="32t-r8-4m7"/>
+                                    <constraint firstAttribute="width" constant="30" id="eas-DJ-JsN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5mO-1G-dTc" firstAttribute="trailing" secondItem="Yfl-Fp-dvG" secondAttribute="trailing" constant="16" id="1sx-my-MzK"/>
+                            <constraint firstItem="f8H-g5-t6m" firstAttribute="leading" secondItem="5mO-1G-dTc" secondAttribute="leading" constant="32" id="7sZ-yL-wkf"/>
+                            <constraint firstItem="UsY-6o-0pU" firstAttribute="top" secondItem="f8H-g5-t6m" secondAttribute="bottom" constant="32" id="JQd-9G-X9E"/>
+                            <constraint firstItem="CKn-ea-zUE" firstAttribute="leading" secondItem="f8H-g5-t6m" secondAttribute="trailing" constant="16" id="MKe-U1-YDz"/>
+                            <constraint firstItem="Yfl-Fp-dvG" firstAttribute="top" secondItem="QJl-uB-X0F" secondAttribute="bottom" constant="16" id="MV6-lN-t4A"/>
+                            <constraint firstItem="5mO-1G-dTc" firstAttribute="trailing" secondItem="QJl-uB-X0F" secondAttribute="trailing" constant="16" id="XyJ-6l-ohX"/>
+                            <constraint firstAttribute="trailing" secondItem="CKn-ea-zUE" secondAttribute="trailing" constant="16" id="ZMc-Z9-pps"/>
+                            <constraint firstItem="f8H-g5-t6m" firstAttribute="centerY" secondItem="CKn-ea-zUE" secondAttribute="centerY" id="cpV-Io-VKs"/>
+                            <constraint firstItem="5mO-1G-dTc" firstAttribute="trailing" secondItem="UsY-6o-0pU" secondAttribute="trailing" constant="16" id="eQL-d0-sm7"/>
+                            <constraint firstItem="Yfl-Fp-dvG" firstAttribute="leading" secondItem="5mO-1G-dTc" secondAttribute="leading" constant="16" id="eqs-6O-sGO"/>
+                            <constraint firstItem="UsY-6o-0pU" firstAttribute="leading" secondItem="5mO-1G-dTc" secondAttribute="leading" constant="16" id="gEy-MM-VQA"/>
+                            <constraint firstItem="QJl-uB-X0F" firstAttribute="leading" secondItem="5mO-1G-dTc" secondAttribute="leading" constant="16" id="hOA-T9-NSK"/>
+                            <constraint firstItem="QJl-uB-X0F" firstAttribute="top" secondItem="UsY-6o-0pU" secondAttribute="bottom" constant="32" id="orX-2Y-eeI"/>
+                            <constraint firstItem="f8H-g5-t6m" firstAttribute="top" secondItem="5mO-1G-dTc" secondAttribute="top" constant="20" id="qdt-u8-PbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5mO-1G-dTc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A1j-iv-OJR"/>
+                    <connections>
+                        <outlet property="closeButton" destination="f8H-g5-t6m" id="WZu-lf-hVt"/>
+                        <outlet property="continueButton" destination="Yfl-Fp-dvG" id="APP-km-Kwd"/>
+                        <outlet property="nameTextField" destination="QJl-uB-X0F" id="hBz-My-ojw"/>
+                        <outlet property="progressBar" destination="CKn-ea-zUE" id="hec-OB-X4T"/>
+                        <segue destination="Ga2-Yr-Qgn" kind="show" identifier="segueToRegisterOptionVC" id="57r-SQ-s36"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdH-zN-gnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1920.289855072464" y="227.00892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ML2-kG-BoF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VG0-m1-Hd4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WSH-zr-zE4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Q4-3o-ccn" kind="relationship" relationship="rootViewController" id="MCU-2o-2qk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQC-q4-r7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2830.434782608696" y="226.33928571428569"/>
+        </scene>
+        <!--Registration OptionVC-->
+        <scene sceneID="J0s-C9-XON">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationOptionVC" id="Ga2-Yr-Qgn" customClass="RegistrationOptionVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQh-7E-7aK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000596046448" translatesAutoresizingMaskIntoConstraints="NO" id="DQi-Df-96I" customClass="BorderProgressBar" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="78" y="113" width="320" height="20"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0dU-Zo-TbJ"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you registering for yourself or for your child ?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5f-WI-5gU">
+                                <rect key="frame" x="16" y="178" width="382" height="47"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj0-Zk-IF1" customClass="BorderView" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="241" width="195" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youself" translatesAutoresizingMaskIntoConstraints="NO" id="U3p-ZQ-ge2">
+                                        <rect key="frame" x="16" y="16" width="163" height="68"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="U3p-ZQ-ge2" firstAttribute="leading" secondItem="Xj0-Zk-IF1" secondAttribute="leading" constant="16" id="NbF-9D-DCx"/>
+                                    <constraint firstAttribute="bottom" secondItem="U3p-ZQ-ge2" secondAttribute="bottom" constant="16" id="Oa4-mu-eso"/>
+                                    <constraint firstAttribute="height" constant="100" id="TpE-H1-SFe"/>
+                                    <constraint firstItem="U3p-ZQ-ge2" firstAttribute="top" secondItem="Xj0-Zk-IF1" secondAttribute="top" constant="16" id="UdP-kB-A6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="U3p-ZQ-ge2" secondAttribute="trailing" constant="16" id="x78-Gt-dJB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4y-nD-YWA" customClass="BorderView" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="211" y="241" width="195" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child" translatesAutoresizingMaskIntoConstraints="NO" id="MkC-jR-4Wy">
+                                        <rect key="frame" x="16" y="16" width="163" height="68"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MkC-jR-4Wy" firstAttribute="top" secondItem="e4y-nD-YWA" secondAttribute="top" constant="16" id="MEk-zY-QDJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="S5a-UA-tpd"/>
+                                    <constraint firstItem="MkC-jR-4Wy" firstAttribute="leading" secondItem="e4y-nD-YWA" secondAttribute="leading" constant="16" id="Unu-bN-cQg"/>
+                                    <constraint firstAttribute="trailing" secondItem="MkC-jR-4Wy" secondAttribute="trailing" constant="16" id="VcK-hY-zOy"/>
+                                    <constraint firstAttribute="bottom" secondItem="MkC-jR-4Wy" secondAttribute="bottom" constant="16" id="W9i-8Z-bZd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yourself" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZS-dL-MkE">
+                                <rect key="frame" x="8" y="349" width="195" height="20"/>
+                                <fontDescription key="fontDescription" name="DinRoundRegular" family="Din Round" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv5-OR-cQg">
+                                <rect key="frame" x="211" y="349" width="195" height="20"/>
+                                <fontDescription key="fontDescription" name="DinRoundRegular" family="Din Round" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="5Ut-LD-NuM">
+                                <rect key="frame" x="32" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0pl-dU-xxd"/>
+                                    <constraint firstAttribute="height" constant="30" id="XJ3-0b-r3S"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ap8-zW-yIV" firstAttribute="trailing" secondItem="Z5f-WI-5gU" secondAttribute="trailing" constant="16" id="5gU-Cb-f8J"/>
+                            <constraint firstItem="ZZS-dL-MkE" firstAttribute="top" secondItem="Xj0-Zk-IF1" secondAttribute="bottom" constant="8" id="DBe-pT-c0p"/>
+                            <constraint firstItem="DQi-Df-96I" firstAttribute="leading" secondItem="5Ut-LD-NuM" secondAttribute="trailing" constant="16" id="IjT-Lr-UWL"/>
+                            <constraint firstItem="e4y-nD-YWA" firstAttribute="leading" secondItem="Xj0-Zk-IF1" secondAttribute="trailing" constant="8" id="Ke7-ph-JpP"/>
+                            <constraint firstItem="Ap8-zW-yIV" firstAttribute="trailing" secondItem="e4y-nD-YWA" secondAttribute="trailing" constant="8" id="KkD-sI-LSB"/>
+                            <constraint firstItem="Xj0-Zk-IF1" firstAttribute="width" secondItem="e4y-nD-YWA" secondAttribute="width" id="L68-qU-Vdz"/>
+                            <constraint firstItem="5Ut-LD-NuM" firstAttribute="leading" secondItem="Ap8-zW-yIV" secondAttribute="leading" constant="32" id="LKE-vK-Fhw"/>
+                            <constraint firstItem="Mv5-OR-cQg" firstAttribute="trailing" secondItem="e4y-nD-YWA" secondAttribute="trailing" id="O8S-Sq-0Yi"/>
+                            <constraint firstItem="Z5f-WI-5gU" firstAttribute="leading" secondItem="Ap8-zW-yIV" secondAttribute="leading" constant="16" id="SP8-Nu-iRd"/>
+                            <constraint firstItem="Xj0-Zk-IF1" firstAttribute="top" secondItem="Z5f-WI-5gU" secondAttribute="bottom" constant="16" id="SZ6-nk-cFo"/>
+                            <constraint firstItem="5Ut-LD-NuM" firstAttribute="centerY" secondItem="DQi-Df-96I" secondAttribute="centerY" id="ako-vk-clZ"/>
+                            <constraint firstItem="Z5f-WI-5gU" firstAttribute="top" secondItem="5Ut-LD-NuM" secondAttribute="bottom" constant="40" id="b3i-Y1-d4f"/>
+                            <constraint firstItem="Mv5-OR-cQg" firstAttribute="leading" secondItem="e4y-nD-YWA" secondAttribute="leading" id="bvC-OV-sxg"/>
+                            <constraint firstItem="Mv5-OR-cQg" firstAttribute="top" secondItem="e4y-nD-YWA" secondAttribute="bottom" constant="8" id="egC-qa-cwU"/>
+                            <constraint firstItem="Ap8-zW-yIV" firstAttribute="trailing" secondItem="DQi-Df-96I" secondAttribute="trailing" constant="16" id="m46-bw-fGv"/>
+                            <constraint firstItem="ZZS-dL-MkE" firstAttribute="trailing" secondItem="Xj0-Zk-IF1" secondAttribute="trailing" id="ony-Mb-cgm"/>
+                            <constraint firstItem="5Ut-LD-NuM" firstAttribute="top" secondItem="Ap8-zW-yIV" secondAttribute="top" constant="20" id="pcc-lS-XNF"/>
+                            <constraint firstItem="ZZS-dL-MkE" firstAttribute="leading" secondItem="Xj0-Zk-IF1" secondAttribute="leading" id="r6p-3M-LME"/>
+                            <constraint firstItem="e4y-nD-YWA" firstAttribute="top" secondItem="Xj0-Zk-IF1" secondAttribute="top" id="rw7-Hi-jUZ"/>
+                            <constraint firstItem="Xj0-Zk-IF1" firstAttribute="leading" secondItem="Ap8-zW-yIV" secondAttribute="leading" constant="8" id="sse-yb-fv1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ap8-zW-yIV"/>
+                    </view>
+                    <connections>
+                        <outlet property="childImageView" destination="MkC-jR-4Wy" id="udJ-GW-SN3"/>
+                        <outlet property="childView" destination="e4y-nD-YWA" id="eqB-rX-aZe"/>
+                        <outlet property="closeButton" destination="5Ut-LD-NuM" id="nGc-x0-CPV"/>
+                        <outlet property="yourSelfImageView" destination="U3p-ZQ-ge2" id="bbz-xp-Wmk"/>
+                        <outlet property="yourSelfView" destination="Xj0-Zk-IF1" id="pFE-Jq-esM"/>
+                        <segue destination="wcc-UV-ds5" kind="show" identifier="segueToRegistrationYourselfVC" id="gUD-sg-349"/>
+                        <segue destination="bMc-af-s00" kind="show" identifier="showSegueToRegisterChildVC" id="jiW-mp-zwN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHM-Kw-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275" y="226"/>
+        </scene>
+        <!--Registration Your SelfVC-->
+        <scene sceneID="WtB-Pl-fx0">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationYourSelfVC" id="wcc-UV-ds5" customClass="RegistrationYourSelfVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHD-Gi-xZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="iNt-sw-FcL">
+                                <rect key="frame" x="32" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8cP-72-tnd"/>
+                                    <constraint firstAttribute="height" constant="30" id="IYL-Pu-NAy"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="bnZ-jg-3ea" customClass="BorderProgressBar" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="78" y="113" width="320" height="20"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1gI-H4-0A2"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats your email address ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEu-yn-ydW">
+                                <rect key="frame" x="16" y="170" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-xf-ATh" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="209.5" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tfE-1c-mSy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats your mobile no.?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W09-Rp-CPA">
+                                <rect key="frame" x="16" y="265.5" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your mobile number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bue-3X-R0o" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="305" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6gm-fw-7vj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFy-Y4-tja" customClass="ShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="361" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h1J-bA-o0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="wcc-UV-ds5" eventType="touchUpInside" id="zTp-tT-l0U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bue-3X-R0o" firstAttribute="top" secondItem="W09-Rp-CPA" secondAttribute="bottom" constant="16" id="2Pc-xV-vMi"/>
+                            <constraint firstItem="b8t-xf-ATh" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="16" id="GXa-bF-t4e"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="vFy-Y4-tja" secondAttribute="trailing" constant="16" id="K7S-tx-1Kg"/>
+                            <constraint firstItem="W09-Rp-CPA" firstAttribute="top" secondItem="b8t-xf-ATh" secondAttribute="bottom" constant="16" id="Kpc-fK-xnJ"/>
+                            <constraint firstItem="bnZ-jg-3ea" firstAttribute="leading" secondItem="iNt-sw-FcL" secondAttribute="trailing" constant="16" id="N5T-5t-mbV"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="bue-3X-R0o" secondAttribute="trailing" constant="16" id="PyS-Yg-Wu3"/>
+                            <constraint firstItem="W09-Rp-CPA" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="16" id="Rsd-vu-iqx"/>
+                            <constraint firstItem="vFy-Y4-tja" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="16" id="SNr-BE-cUW"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="W09-Rp-CPA" secondAttribute="trailing" constant="16" id="Z0F-cA-ycn"/>
+                            <constraint firstItem="b8t-xf-ATh" firstAttribute="top" secondItem="mEu-yn-ydW" secondAttribute="bottom" constant="16" id="ZzR-bB-x2J"/>
+                            <constraint firstItem="bue-3X-R0o" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="16" id="fPI-WZ-LxD"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="b8t-xf-ATh" secondAttribute="trailing" constant="16" id="fl4-68-mup"/>
+                            <constraint firstItem="mEu-yn-ydW" firstAttribute="top" secondItem="iNt-sw-FcL" secondAttribute="bottom" constant="32" id="hdK-YQ-RVs"/>
+                            <constraint firstItem="mEu-yn-ydW" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="16" id="j0K-eM-Wsa"/>
+                            <constraint firstItem="vFy-Y4-tja" firstAttribute="top" secondItem="bue-3X-R0o" secondAttribute="bottom" constant="16" id="jmK-lr-WA7"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="bnZ-jg-3ea" secondAttribute="trailing" constant="16" id="pic-LN-ztw"/>
+                            <constraint firstItem="iNt-sw-FcL" firstAttribute="centerY" secondItem="bnZ-jg-3ea" secondAttribute="centerY" id="qpQ-ZS-coo"/>
+                            <constraint firstItem="iNt-sw-FcL" firstAttribute="leading" secondItem="OBo-jZ-e36" secondAttribute="leading" constant="32" id="sKw-ws-Ebs"/>
+                            <constraint firstItem="iNt-sw-FcL" firstAttribute="top" secondItem="OBo-jZ-e36" secondAttribute="top" constant="20" id="uUe-vW-p5Q"/>
+                            <constraint firstItem="OBo-jZ-e36" firstAttribute="trailing" secondItem="mEu-yn-ydW" secondAttribute="trailing" constant="16" id="usG-4M-9xa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OBo-jZ-e36"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="iNt-sw-FcL" id="X7W-9g-gbX"/>
+                        <outlet property="continueButton" destination="vFy-Y4-tja" id="WzN-ZO-SS8"/>
+                        <outlet property="emailAdressTextField" destination="b8t-xf-ATh" id="IHL-oj-uuH"/>
+                        <outlet property="mobileNumberTextField" destination="bue-3X-R0o" id="yQw-jg-Ifc"/>
+                        <segue destination="jWh-8f-w5y" kind="show" identifier="segueToRegistrationOTPVC" id="ZKA-jY-2SQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIz-lv-x8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616" y="226"/>
+        </scene>
+        <!--Registration YourselfOTPVC-->
+        <scene sceneID="m0F-5d-dLv">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationYourselfOTPVC" id="jWh-8f-w5y" customClass="RegistrationYourselfOTPVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3lZ-E5-9x1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-nf-2QJ">
+                                <rect key="frame" x="32" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oV0-sX-8tk"/>
+                                    <constraint firstAttribute="width" constant="30" id="xiS-SJ-3Vh"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="iMg-jr-3St" customClass="BorderProgressBar" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="78" y="113" width="320" height="20"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XX1-EI-ZSX"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-kS-nBf">
+                                <rect key="frame" x="16" y="170" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you access code via SMS for mobile number verification" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb2-y5-XNg">
+                                <rect key="frame" x="16" y="219" width="382" height="40"/>
+                                <fontDescription key="fontDescription" name="DinRoundRegular" family="Din Round" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QtS-rm-g4g">
+                                <rect key="frame" x="16" y="275" width="382" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-Vu-1DX" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUD-5d-MpK" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                        <rect key="frame" x="98" y="0.0" width="88" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-so-CrM" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                        <rect key="frame" x="196" y="0.0" width="88" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-rh-Cjr" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                                        <rect key="frame" x="294" y="0.0" width="88" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jcC-l1-LwC"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrQ-5Q-Hw4" customClass="ShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="341" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SNj-Wz-0cn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="jWh-8f-w5y" eventType="touchUpInside" id="p0B-gh-veZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't receive OTP?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWN-gO-kKu">
+                                <rect key="frame" x="16" y="397" width="131" height="36"/>
+                                <fontDescription key="fontDescription" name="DinRoundRegular" family="Din Round" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-b5-xxD">
+                                <rect key="frame" x="304" y="397" width="94" height="30"/>
+                                <fontDescription key="fontDescription" name="DinRoundRegular" family="Din Round" pointSize="15"/>
+                                <state key="normal" title="Resend OTP?">
+                                    <color key="titleColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7te-ma-Agf">
+                                <rect key="frame" x="304" y="427" width="94" height="1"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="VhN-WF-Fqp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="QtS-rm-g4g" secondAttribute="trailing" constant="16" id="1Qr-u9-EfD"/>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="LrQ-5Q-Hw4" secondAttribute="trailing" constant="16" id="4Ga-b4-kKQ"/>
+                            <constraint firstItem="QtS-rm-g4g" firstAttribute="top" secondItem="Pb2-y5-XNg" secondAttribute="bottom" constant="16" id="5V6-m5-syQ"/>
+                            <constraint firstItem="mWN-gO-kKu" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="16" id="7UE-IB-jao"/>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="D4u-b5-xxD" secondAttribute="trailing" constant="16" id="Aof-DY-fR8"/>
+                            <constraint firstItem="cUs-nf-2QJ" firstAttribute="centerY" secondItem="iMg-jr-3St" secondAttribute="centerY" id="ByR-BI-4BC"/>
+                            <constraint firstItem="QtS-rm-g4g" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="16" id="I1p-qQ-Fmb"/>
+                            <constraint firstItem="7te-ma-Agf" firstAttribute="top" secondItem="D4u-b5-xxD" secondAttribute="bottom" id="Ocn-C3-E6B"/>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="iCF-kS-nBf" secondAttribute="trailing" constant="16" id="Ohc-Tn-aIR"/>
+                            <constraint firstItem="7te-ma-Agf" firstAttribute="trailing" secondItem="D4u-b5-xxD" secondAttribute="trailing" id="RUx-6f-u6D"/>
+                            <constraint firstItem="iCF-kS-nBf" firstAttribute="top" secondItem="cUs-nf-2QJ" secondAttribute="bottom" constant="32" id="RaL-oF-qMl"/>
+                            <constraint firstItem="LrQ-5Q-Hw4" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="16" id="SEU-FJ-Oqy"/>
+                            <constraint firstItem="cUs-nf-2QJ" firstAttribute="top" secondItem="j2v-7u-Z6a" secondAttribute="top" constant="20" id="cjo-s0-H7p"/>
+                            <constraint firstItem="7te-ma-Agf" firstAttribute="leading" secondItem="D4u-b5-xxD" secondAttribute="leading" id="fNN-3c-iLG"/>
+                            <constraint firstItem="D4u-b5-xxD" firstAttribute="top" secondItem="LrQ-5Q-Hw4" secondAttribute="bottom" constant="16" id="fXQ-Zs-Epn"/>
+                            <constraint firstItem="mWN-gO-kKu" firstAttribute="centerY" secondItem="D4u-b5-xxD" secondAttribute="centerY" constant="3" id="gtE-EP-FrJ"/>
+                            <constraint firstItem="Pb2-y5-XNg" firstAttribute="top" secondItem="iCF-kS-nBf" secondAttribute="bottom" constant="25.5" id="iO4-mj-bjs"/>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="iMg-jr-3St" secondAttribute="trailing" constant="16" id="j6N-tz-h8w"/>
+                            <constraint firstItem="j2v-7u-Z6a" firstAttribute="trailing" secondItem="Pb2-y5-XNg" secondAttribute="trailing" constant="16" id="moH-jG-5kw"/>
+                            <constraint firstItem="iCF-kS-nBf" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="16" id="omd-6r-U5a"/>
+                            <constraint firstItem="mWN-gO-kKu" firstAttribute="top" secondItem="LrQ-5Q-Hw4" secondAttribute="bottom" constant="16" id="p7U-UH-ubn"/>
+                            <constraint firstItem="iMg-jr-3St" firstAttribute="leading" secondItem="cUs-nf-2QJ" secondAttribute="trailing" constant="16" id="puh-29-nGh"/>
+                            <constraint firstItem="LrQ-5Q-Hw4" firstAttribute="top" secondItem="QtS-rm-g4g" secondAttribute="bottom" constant="16" id="rw9-fJ-UR4"/>
+                            <constraint firstItem="Pb2-y5-XNg" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="16" id="vc5-ds-UOC"/>
+                            <constraint firstItem="cUs-nf-2QJ" firstAttribute="leading" secondItem="j2v-7u-Z6a" secondAttribute="leading" constant="32" id="xpG-a2-v1x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j2v-7u-Z6a"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="cUs-nf-2QJ" id="YA0-9S-Fo9"/>
+                        <outlet property="firstOtpTextField" destination="NXy-Vu-1DX" id="t89-F9-3so"/>
+                        <outlet property="fourthOtpTextField" destination="bEV-rh-Cjr" id="7Bu-YJ-lo9"/>
+                        <outlet property="secondOtpTextField" destination="XUD-5d-MpK" id="9Qg-x3-d6j"/>
+                        <outlet property="thirdOtpTextField" destination="Y6O-so-CrM" id="UrO-8n-Mxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKJ-Jq-Zu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="227"/>
+        </scene>
+        <!--Register ChildVC-->
+        <scene sceneID="rJ6-ce-HXq">
+            <objects>
+                <viewController storyboardIdentifier="RegisterChildVC" id="bMc-af-s00" customClass="RegisterChildVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuo-zm-826">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-Uj-n4B">
+                                <rect key="frame" x="32" y="108" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="a8E-iA-1Hw"/>
+                                    <constraint firstAttribute="height" constant="30" id="xGq-Jz-1rB"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="gaR-ib-vbf" customClass="BorderProgressBar" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="78" y="113" width="320" height="20"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="O0p-G4-KbH"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNP-Bn-atK">
+                                <rect key="frame" x="16" y="170" width="382" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="aiZ-Kf-CrC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VtQ-zl-qbz">
+                                <rect key="frame" x="0.0" y="212" width="414" height="642"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZT4-0r-BQr">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaJ-et-kWU">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZT4-0r-BQr" secondAttribute="trailing" constant="-16" id="1c9-6X-pUo"/>
+                                    <constraint firstItem="ZT4-0r-BQr" firstAttribute="width" secondItem="VtQ-zl-qbz" secondAttribute="width" constant="-32" id="ETM-Pi-YfO"/>
+                                    <constraint firstItem="ZT4-0r-BQr" firstAttribute="leading" secondItem="VtQ-zl-qbz" secondAttribute="leading" constant="16" id="j7a-ki-oAr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZT4-0r-BQr" secondAttribute="bottom" id="kkU-3E-Uvw"/>
+                                    <constraint firstItem="ZT4-0r-BQr" firstAttribute="top" secondItem="VtQ-zl-qbz" secondAttribute="top" id="p3C-ws-uQe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gaR-ib-vbf" firstAttribute="leading" secondItem="Duy-Uj-n4B" secondAttribute="trailing" constant="16" id="0m3-3D-Fiz"/>
+                            <constraint firstItem="2Gt-a3-b8c" firstAttribute="trailing" secondItem="gaR-ib-vbf" secondAttribute="trailing" constant="16" id="FK5-xE-0UU"/>
+                            <constraint firstItem="2Gt-a3-b8c" firstAttribute="trailing" secondItem="VtQ-zl-qbz" secondAttribute="trailing" id="Ie3-Hc-qMj"/>
+                            <constraint firstItem="2Gt-a3-b8c" firstAttribute="trailing" secondItem="RNP-Bn-atK" secondAttribute="trailing" constant="16" id="JWh-aQ-4pJ"/>
+                            <constraint firstItem="RNP-Bn-atK" firstAttribute="leading" secondItem="2Gt-a3-b8c" secondAttribute="leading" constant="16" id="PCM-4E-9AN"/>
+                            <constraint firstItem="Duy-Uj-n4B" firstAttribute="top" secondItem="2Gt-a3-b8c" secondAttribute="top" constant="20" id="T4A-D7-PXX"/>
+                            <constraint firstItem="RNP-Bn-atK" firstAttribute="top" secondItem="Duy-Uj-n4B" secondAttribute="bottom" constant="32" id="TAQ-ki-bWm"/>
+                            <constraint firstItem="Duy-Uj-n4B" firstAttribute="centerY" secondItem="gaR-ib-vbf" secondAttribute="centerY" id="fa3-3M-gRb"/>
+                            <constraint firstItem="2Gt-a3-b8c" firstAttribute="bottom" secondItem="VtQ-zl-qbz" secondAttribute="bottom" constant="8" id="ntz-e3-0Bq"/>
+                            <constraint firstItem="Duy-Uj-n4B" firstAttribute="leading" secondItem="2Gt-a3-b8c" secondAttribute="leading" constant="32" id="oZA-YD-F11"/>
+                            <constraint firstItem="VtQ-zl-qbz" firstAttribute="leading" secondItem="2Gt-a3-b8c" secondAttribute="leading" id="wiO-YC-dBY"/>
+                            <constraint firstItem="VtQ-zl-qbz" firstAttribute="top" secondItem="RNP-Bn-atK" secondAttribute="bottom" constant="16" id="z2L-o1-lIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Gt-a3-b8c"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Duy-Uj-n4B" id="GVb-CZ-Tbi"/>
+                        <outlet property="progressView" destination="gaR-ib-vbf" id="bjN-nq-913"/>
+                        <outlet property="rootStackView" destination="ZT4-0r-BQr" id="C8t-kI-nK0"/>
+                        <outlet property="tempButton" destination="QaJ-et-kWU" id="hSR-sx-w9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kX6-P6-1ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="217.63392857142856"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Myq-Gu-GGm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkb-ee-ccC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5Cd-ZO-eL8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Us-vb-Q1P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="are-vT-idz" kind="relationship" relationship="rootViewController" id="64f-bh-eeX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcR-7O-ITl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3470" y="613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel" width="20" height="20"/>
+        <image name="child" width="512" height="512"/>
+        <image name="explore_act" width="25" height="25"/>
+        <image name="home_act" width="25" height="25"/>
+        <image name="youself" width="512" height="512"/>
+    </resources>
+</document>

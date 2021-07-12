@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityDetailsTopViewCell" rowHeight="372" id="RAb-2l-Y7T" customClass="ActivityDetailsTopViewCell" customModule="SwimmingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RAb-2l-Y7T" id="UuL-mM-iWy">
+                <rect key="frame" x="0.0" y="0.0" width="518" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-Sj-bEU">
+                        <rect key="frame" x="8" y="8" width="502" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="yLT-Q5-6Ji"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yd-ed-ncv" customClass="ShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="208.5" width="180" height="40"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9mx-nQ-6Vg"/>
+                            <constraint firstAttribute="width" constant="180" id="v8d-N4-VAo"/>
+                        </constraints>
+                        <state key="normal" title="Repeat">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vvo-uK-Bbq">
+                        <rect key="frame" x="8" y="33.5" width="502" height="170"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="MzN-P1-wAK"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6yd-ed-ncv" firstAttribute="leading" secondItem="UuL-mM-iWy" secondAttribute="leading" constant="8" id="5YR-ad-gBb"/>
+                    <constraint firstAttribute="trailing" secondItem="vvo-uK-Bbq" secondAttribute="trailing" constant="8" id="94h-7c-z1F"/>
+                    <constraint firstItem="nuR-Sj-bEU" firstAttribute="leading" secondItem="UuL-mM-iWy" secondAttribute="leading" constant="8" id="GIR-bW-tx8"/>
+                    <constraint firstItem="nuR-Sj-bEU" firstAttribute="top" secondItem="UuL-mM-iWy" secondAttribute="top" constant="8" id="QFd-dh-oAh"/>
+                    <constraint firstItem="vvo-uK-Bbq" firstAttribute="top" secondItem="nuR-Sj-bEU" secondAttribute="bottom" constant="5" id="d7m-J9-Stq"/>
+                    <constraint firstItem="6yd-ed-ncv" firstAttribute="top" secondItem="vvo-uK-Bbq" secondAttribute="bottom" constant="5" id="nBu-6W-EIj"/>
+                    <constraint firstAttribute="trailing" secondItem="nuR-Sj-bEU" secondAttribute="trailing" constant="8" id="nDq-8C-ZIe"/>
+                    <constraint firstItem="vvo-uK-Bbq" firstAttribute="leading" secondItem="UuL-mM-iWy" secondAttribute="leading" constant="8" id="nY8-ZS-FM4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btRepeat" destination="6yd-ed-ncv" id="e61-iX-yQw"/>
+                <outlet property="lblTitle" destination="nuR-Sj-bEU" id="zfs-hB-twe"/>
+                <outlet property="txtDescription" destination="vvo-uK-Bbq" id="D5J-PN-ZUE"/>
+            </connections>
+            <point key="canvasLocation" x="88.405797101449281" y="149.33035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

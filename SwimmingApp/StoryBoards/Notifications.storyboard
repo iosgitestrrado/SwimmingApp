@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="JEr-55-RsD">
+            <objects>
+                <viewController storyboardIdentifier="NotificationListingVC" id="T94-fI-TKu" customClass="NotificationListingVC" customModule="SwimmingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAY-Im-WQP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMF-Ai-qHJ" customClass="CommonHeader" customModule="SwimmingApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ZL3-8O-KEM"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-dL-YAj">
+                                <rect key="frame" x="0.0" y="66" width="414" height="796"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="T94-fI-TKu" id="toL-9U-Afc"/>
+                                    <outlet property="delegate" destination="T94-fI-TKu" id="iI5-RR-SLG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aX1-aB-HEm"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KMF-Ai-qHJ" firstAttribute="trailing" secondItem="aX1-aB-HEm" secondAttribute="trailing" id="8KW-BK-d6y"/>
+                            <constraint firstItem="KMF-Ai-qHJ" firstAttribute="leading" secondItem="aX1-aB-HEm" secondAttribute="leading" id="CPF-WZ-stw"/>
+                            <constraint firstItem="7Rv-dL-YAj" firstAttribute="trailing" secondItem="aX1-aB-HEm" secondAttribute="trailing" id="GWF-ho-FEK"/>
+                            <constraint firstItem="7Rv-dL-YAj" firstAttribute="top" secondItem="KMF-Ai-qHJ" secondAttribute="bottom" id="J2k-m6-QZL"/>
+                            <constraint firstItem="KMF-Ai-qHJ" firstAttribute="top" secondItem="aX1-aB-HEm" secondAttribute="top" constant="-44" id="Rcl-p1-Wuk"/>
+                            <constraint firstItem="7Rv-dL-YAj" firstAttribute="leading" secondItem="aX1-aB-HEm" secondAttribute="leading" id="aEs-TZ-9Gy"/>
+                            <constraint firstItem="7Rv-dL-YAj" firstAttribute="bottom" secondItem="aX1-aB-HEm" secondAttribute="bottom" id="efG-uN-HuA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="noti_act" selectedImage="noti_act" id="AVM-9C-Bxu"/>
+                    <connections>
+                        <outlet property="header" destination="KMF-Ai-qHJ" id="hW3-JS-D1f"/>
+                        <outlet property="notificationListingTableView" destination="7Rv-dL-YAj" id="3zC-T6-eon"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0i-lE-RCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="211.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noti_act" width="25" height="25"/>
+    </resources>
+</document>

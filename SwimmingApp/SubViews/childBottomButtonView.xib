@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="childBottomButtonView" customModule="SwimmingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggf-4L-9cW" customClass="BlueShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="306" y="60" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.20784313725490194" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AJe-l5-Q10"/>
+                        <constraint firstAttribute="width" constant="100" id="EIJ-Pt-WRZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                    <state key="normal" title="Add">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC7-XW-jav" customClass="ShadowButton" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="8" y="106" width="398" height="40"/>
+                    <color key="backgroundColor" red="0.20784313725490194" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2zY-RU-Dwb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gC7-XW-jav" firstAttribute="top" secondItem="ggf-4L-9cW" secondAttribute="bottom" constant="16" id="0LA-Pr-ELd"/>
+                <constraint firstItem="ggf-4L-9cW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="3Ak-Il-hpN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ggf-4L-9cW" secondAttribute="trailing" constant="8" id="93V-Hn-yxe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gC7-XW-jav" secondAttribute="bottom" priority="999" constant="8" id="Nd4-cC-lT6"/>
+                <constraint firstItem="gC7-XW-jav" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="QPg-Ac-MCM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gC7-XW-jav" secondAttribute="trailing" constant="8" id="Wi7-1U-OKM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addButton" destination="ggf-4L-9cW" id="Ap5-Nh-oot"/>
+                <outlet property="submitButton" destination="gC7-XW-jav" id="D51-fC-BFw"/>
+            </connections>
+        </view>
+    </objects>
+</document>

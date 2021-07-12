@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PastActivityDetailedVCCell" rowHeight="504" id="hmp-wZ-NOq" customClass="PastActivityDetailedVCCell" customModule="SwimmingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="586" height="504"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hmp-wZ-NOq" id="UJB-HN-7OX">
+                <rect key="frame" x="0.0" y="0.0" width="586" height="503.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVx-Qq-ERr">
+                        <rect key="frame" x="16" y="8" width="554" height="19"/>
+                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-YX-gXQ">
+                        <rect key="frame" x="16" y="141" width="53" height="19"/>
+                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EZo-Op-ebF">
+                        <rect key="frame" x="16" y="35" width="554" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNP-Bs-PbK">
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="98"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QOq-2I-mWT">
+                        <rect key="frame" x="16" y="168" width="554" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AS-pw-CKs">
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="98"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Video/Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDP-Aw-1hn">
+                        <rect key="frame" x="16" y="274" width="118" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="log-Hf-bWe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-jv-c37">
+                        <rect key="frame" x="16" y="301" width="554" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swim-girl" translatesAutoresizingMaskIntoConstraints="NO" id="J8q-nU-YVL">
+                                <rect key="frame" x="0.0" y="0.0" width="174.5" height="50"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swim-girl" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-66-VJF">
+                                <rect key="frame" x="189.5" y="0.0" width="175" height="50"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swim-girl" translatesAutoresizingMaskIntoConstraints="NO" id="d99-Yw-jXn">
+                                <rect key="frame" x="379.5" y="0.0" width="174.5" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Ac6-7K-QBv"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EZo-Op-ebF" firstAttribute="top" secondItem="jVx-Qq-ERr" secondAttribute="bottom" constant="8" id="5X0-sz-Eo1"/>
+                    <constraint firstItem="zJa-jv-c37" firstAttribute="top" secondItem="nDP-Aw-1hn" secondAttribute="bottom" constant="8" id="ENk-d2-Lm0"/>
+                    <constraint firstItem="vcp-YX-gXQ" firstAttribute="top" secondItem="EZo-Op-ebF" secondAttribute="bottom" constant="8" id="LkB-SI-uPj"/>
+                    <constraint firstItem="jVx-Qq-ERr" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="MwL-LM-nmZ"/>
+                    <constraint firstItem="jVx-Qq-ERr" firstAttribute="top" secondItem="UJB-HN-7OX" secondAttribute="top" constant="8" id="QVG-f9-mbw"/>
+                    <constraint firstItem="nDP-Aw-1hn" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="QW7-vC-vd7"/>
+                    <constraint firstAttribute="trailing" secondItem="QOq-2I-mWT" secondAttribute="trailing" constant="16" id="VT8-Kn-myg"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zJa-jv-c37" secondAttribute="bottom" id="XS0-Bp-fK2"/>
+                    <constraint firstAttribute="trailing" secondItem="zJa-jv-c37" secondAttribute="trailing" constant="16" id="XYb-Jo-CDs"/>
+                    <constraint firstItem="zJa-jv-c37" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="ZaJ-AK-5NK"/>
+                    <constraint firstItem="QOq-2I-mWT" firstAttribute="top" secondItem="vcp-YX-gXQ" secondAttribute="bottom" constant="8" id="aoi-M9-O5N"/>
+                    <constraint firstAttribute="trailing" secondItem="jVx-Qq-ERr" secondAttribute="trailing" constant="16" id="fdy-ax-kMf"/>
+                    <constraint firstAttribute="trailing" secondItem="EZo-Op-ebF" secondAttribute="trailing" constant="16" id="j74-DT-1Un"/>
+                    <constraint firstItem="QOq-2I-mWT" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="k1z-oJ-hFF"/>
+                    <constraint firstItem="vcp-YX-gXQ" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="lHd-j9-ezl"/>
+                    <constraint firstItem="EZo-Op-ebF" firstAttribute="leading" secondItem="UJB-HN-7OX" secondAttribute="leading" constant="16" id="ltY-TP-GZ9"/>
+                    <constraint firstItem="nDP-Aw-1hn" firstAttribute="top" secondItem="QOq-2I-mWT" secondAttribute="bottom" constant="8" id="oPv-J4-c5G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-146" y="216"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="swim-girl" width="540" height="272"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="childSubView" customModule="SwimmingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter child name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7j-pH-85c" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6yv-w4-97D"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter guardians mobile number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-wE-J51" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="100" width="414" height="40"/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4wE-v3-EXD"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter guardians email id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-4c-tcP" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="156" width="414" height="40"/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rSL-0h-TgV"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose guardians relation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3n-Gi-9d8" customClass="TextField" customModule="SwimmingApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="212" width="414" height="40"/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="0.234202454" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hAn-hh-ivr"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="O3n-Gi-9d8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="239-Un-uT5"/>
+                <constraint firstItem="O3n-Gi-9d8" firstAttribute="top" secondItem="vzp-4c-tcP" secondAttribute="bottom" constant="16" id="3l6-6y-aKc"/>
+                <constraint firstItem="O3n-Gi-9d8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="94c-05-r9q"/>
+                <constraint firstItem="vzp-4c-tcP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="PBH-aM-wpx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="O3n-Gi-9d8" secondAttribute="bottom" priority="999" id="SqG-xq-Wa6"/>
+                <constraint firstItem="PCS-wE-J51" firstAttribute="top" secondItem="p7j-pH-85c" secondAttribute="bottom" constant="16" id="Swv-9A-1mv"/>
+                <constraint firstItem="p7j-pH-85c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hQW-Kc-lVy"/>
+                <constraint firstItem="p7j-pH-85c" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lXD-Kv-rMS"/>
+                <constraint firstItem="vzp-4c-tcP" firstAttribute="top" secondItem="PCS-wE-J51" secondAttribute="bottom" constant="16" id="nPy-0W-Wvo"/>
+                <constraint firstItem="PCS-wE-J51" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nqN-L1-KCv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p7j-pH-85c" secondAttribute="trailing" id="r1v-OD-ot2"/>
+                <constraint firstItem="vzp-4c-tcP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sTe-or-hus"/>
+                <constraint firstItem="PCS-wE-J51" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zMM-r9-KIz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="childNameTextField" destination="p7j-pH-85c" id="umI-nf-3l5"/>
+                <outlet property="guardianEmailIdTextField" destination="vzp-4c-tcP" id="PAN-a5-vuO"/>
+                <outlet property="guardianMobileNumberTextField" destination="PCS-wE-J51" id="Eq6-0n-WdT"/>
+                <outlet property="guardianRelationTextField" destination="O3n-Gi-9d8" id="evQ-7E-hku"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
