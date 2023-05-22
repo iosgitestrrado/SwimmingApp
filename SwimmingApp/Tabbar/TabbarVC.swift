@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 class TabbarVC:UITabBarController{
-    
+     
     @IBOutlet var tabbar: UITabBar!
     
    override func viewDidLoad() {
         super.viewDidLoad()
-        tabbar.backgroundColor = UIColor.red
+        tabbar.backgroundColor = UIColor.black
         selectedIndex = 1
     }
 }

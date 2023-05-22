@@ -132,7 +132,7 @@ extension UIApplication {
 }
 
 extension AppDelegate : MessagingDelegate{
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String)
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?)
     {
         print("Firebase registration token: \(fcmToken)")
         UserDefaults.standard.set(fcmToken, forKey: "fcmToken")

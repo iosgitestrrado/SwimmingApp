@@ -189,7 +189,7 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
                 
                 
                 
-                Alamofire.upload(multipartFormData: { (multipartFormData) in
+                AF.upload(multipartFormData: { (multipartFormData) in
                   for (key, value) in parameters {
                     multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
                   }
@@ -197,41 +197,45 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
                   {
                    multipartFormData.append(imgData!, withName: "avthar", fileName: imgName , mimeType: "jpg/png")
                   }
-                }, usingThreshold: UInt64.init(), to: url, method: .post ,headers: nil ) { (result) in
-                  switch result{
-                  case .success(let upload, _, _):
-                    upload.responseJSON { response in
-                 let statValue = response.response?.statusCode
-                 if statValue == 200
-                   {
-                    hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-                    self.showPopUp(message: "Profile Updated successfully")
-                    self.navigationController?.popViewController(animated: true)
-
-                     }
-                     else if statValue == 401
-                     {
-
+                }, to: url, usingThreshold: UInt64.init(), method: .post ,headers: nil ).responseJSON(completionHandler: { response in
+                    
+                    let statValue = response.response?.statusCode
+                    if statValue == 200
+                    {
                         hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-
-                         
-                     }
-                     else
-                     {
-
+                        self.showPopUp(message: "Profile Updated successfully")
+                        self.navigationController?.popViewController(animated: true)
+                        
+                    }
+                    else if statValue == 401
+                    {
+                        
                         hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-
-                     }
-                      if let err = response.error
-                      {
+                        
+                        
+                    }
+                    else
+                    {
+                        
+                        hudControllerClass.hideHudInViewController(viewController: weakSelf!)
+                        
+                    }
+                    if let err = response.error
+                    {
                         print(err)
                         return
-                      }
                     }
-                  case .failure(let error):
-                    print("Error in upload: \(error.localizedDescription)")
-                  }
-                }
+                    
+//                    switch result{
+//                    case .success(let upload):
+//                        upload.responseJSON { response in
+//                            
+//                        }
+//                    case .failure(let error):
+//                        print("Error in upload: \(error.localizedDescription)")
+//                    }
+                })
+                
                 hudControllerClass.hideHudInViewController(viewController: weakSelf!)
 
             }

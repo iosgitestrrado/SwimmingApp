@@ -363,49 +363,80 @@ extension ActivityListingDetailsContentVC:UITableViewDelegate,UITableViewDataSou
 
         let url = webServiceUrls.submitActivityMediaUrl
 
-        Alamofire.upload(multipartFormData: { (multipartFormData) in
+        AF.upload(multipartFormData: { (multipartFormData) in
           for (key, value) in parameters {
             multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
           }
-          if let data = imgData
+            if imgData != nil
           {
            multipartFormData.append(imgData!, withName: "media", fileName: imgName , mimeType: "image/video")
           }
-        }, usingThreshold: UInt64.init(), to: url, method: .post ,headers: nil ) { (result) in
-          switch result{
-          case .success(let upload, _, _):
-            upload.responseJSON { response in
-         let statValue = response.response?.statusCode
-         if statValue == 200
-           {
-            hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-            self.showPopUp(message: "ActivityDetails are  Submitted successfully")
-            self.navigationController?.popViewController(animated: true)
-
-             }
-             else if statValue == 401
-             {
-
+        }, to: url, usingThreshold: UInt64.init(), method: .post ,headers: nil ).responseJSON(completionHandler: { response in
+            let statValue = response.response?.statusCode
+            if statValue == 200
+            {
                 hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-
-                 
-             }
-             else
-             {
-
+                self.showPopUp(message: "ActivityDetails are  Submitted successfully")
+                self.navigationController?.popViewController(animated: true)
+                
+            }
+            else if statValue == 401
+            {
+                
                 hudControllerClass.hideHudInViewController(viewController: weakSelf!)
-
-             }
-              if let err = response.error
-              {
+                
+                
+            }
+            else
+            {
+                
+                hudControllerClass.hideHudInViewController(viewController: weakSelf!)
+                
+            }
+            if let err = response.error
+            {
                 print(err)
                 return
-              }
             }
-          case .failure(let error):
-            print("Error in upload: \(error.localizedDescription)")
-          }
-        }
+        })
+        
+        
+        
+        /*{ (result) in
+            switch result{
+            case .success(let upload, _, _):
+                upload.responseJSON { response in
+                    let statValue = response.response?.statusCode
+                    if statValue == 200
+                    {
+                        hudControllerClass.hideHudInViewController(viewController: weakSelf!)
+                        self.showPopUp(message: "ActivityDetails are  Submitted successfully")
+                        self.navigationController?.popViewController(animated: true)
+                        
+                    }
+                    else if statValue == 401
+                    {
+                        
+                        hudControllerClass.hideHudInViewController(viewController: weakSelf!)
+                        
+                        
+                    }
+                    else
+                    {
+                        
+                        hudControllerClass.hideHudInViewController(viewController: weakSelf!)
+                        
+                    }
+                    if let err = response.error
+                    {
+                        print(err)
+                        return
+                    }
+                }
+            case .failure(let error):
+                print("Error in upload: \(error.localizedDescription)")
+            }
+        }*/
         hudControllerClass.hideHudInViewController(viewController: weakSelf!)
 
     }
